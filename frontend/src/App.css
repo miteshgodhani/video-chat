@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100vh;
+}
+
+.app-name{
+  height: 40px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid rgba(0, 0, 0, 0.465);
+}
+.app-body{
+  /* height: calc(100vh - 40px); */
+  display: flex;
+  flex-direction: column;
+
+}
+.d-center{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-footer{
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.my-video-full{
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 250px;
+  z-index: 999;
+}
+.peer-video-full{
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width:100%;
+
+}
+.videos{
+  padding:10px;
+  display:flex;
+  flex:1;
+  position:relative;
+}
+
+@media only screen and (max-width: 754px) {
+  .peer-video-full{
+    width: 150%;
+    left:-25%
+  }
+  .my-video-full{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 150px;
+    z-index: 999;
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  .peer-video-full{
+    width: 180%;
+    left:-40%
+  }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 400px)  {
+  .my-video, .peer-video{
+    display: flex;
+    justify-content: center;
+  }
+ .my-video video{
+  width: 50% !important;
+ }
+ .peer-video video{
+  width: 50% !important;
+ }
+ .right-part{
+  margin-top: 20px;
+}
+
+}
+
